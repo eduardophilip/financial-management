@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle financeiro</title>
+</head>
+<body>
+    <header>
+        <h1>Controle de despesas</h1>
+    </header>
+    <main class="container">
+        <header class="container__header">
+            <section class="container__balance">
+                <h4>saldo atual</h4>
+                <h1 class="balance__current">€0,00</h1>
+            </section>
+            <section class="container__inc-exp">
+                <div class="container__inc inc-exp">
+                    <h4>receitas</h4>
+                    <p class="money__plus">+ €0,00</p>
+                </div>
+                <div class="container__exp inc-exp">
+                    <h4>despesas</h4>
+                    <p class="money__minus">- €0,00</p>
+                </div>
+            </section>
+        </header>
+
+        <section class="transactions">
+        <h3>transações</h3>
+            <ul class="transactions-list"></ul>
+        </section>
+
+        <section class="add-transactions">
+            <h3>Adicionar trasação</h3>
+            <form class="add-transactions__form" autocomplete="off" autofill="off">
+
+                <div class="add-transactions__form-control">
+                    <label class="add-transactions__label" for="text">Nome</label>
+                    <input class="add-transactions__name" autofocus type="text" id="text" placeholder="Nome da transação">
+                </div>
+
+                <div class="add-transactions__form-control">
+                    <label class="add-transactions__label" for="amount">Valor</label>
+                    <input class="add-transactions__amount" autofocus autocomplete="none" type="number" id="amount" placeholder="Valor da transação">
+                </div>
+
+                <button class="add-transactions__btn">Adicionar</button>
+
+            </form>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

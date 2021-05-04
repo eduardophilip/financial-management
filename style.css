@@ -1,0 +1,175 @@
+/*====== GLOBAL ======*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
+    --color-plus: #2ecc71;
+    --color-minus: #c0392b;
+    --delete-btn: #e74c3c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    outline: 0;
+}
+
+.container {
+    margin: 30px auto;
+    width: 350px;
+}
+
+.balance__current {
+    letter-spacing: 2px;
+    margin: 0;
+    color: #2e75cc;
+}
+
+
+
+.container__inc-exp {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.inc-exp {
+    flex: 1;
+    text-align: center;
+}
+
+.container__inc {
+    border-right: 1px solid #dedede;
+}
+
+.money__plus {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+    color: var(--color-plus);
+}
+.money__minus {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+    color: var(--color-minus);
+}
+
+.transactions-list {
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.list__added {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.transactions-list__plus {
+    border-right: 5px solid var(--color-plus);
+}
+
+.transactions-list__minus {
+    border-right: 5px solid var(--color-minus);
+}
+
+.transaction-list__operator-plus {
+    font-size: 1.5rem;
+
+    color: ;
+}
+.transaction-list__operator-minus {
+    font-size: 3rem;
+    display: inline-block;
+    border: 1px solid red;
+    color: ;
+}
+
+.transactions-list__delete-btn {
+    cursor: pointer;
+    background-color: var(--delete-btn);
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.transactions-list__plus:hover .transactions-list__delete-btn,
+.transactions-list__minus:hover .transactions-list__delete-btn {
+    opacity: 1;
+}
+
+
+.add-transactions__label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.add-transactions__name, 
+.add-transactions__amount {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    display: block;
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+}
+
+.add-transactions__btn {
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    background-color: #9c88ff;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 30px;
+    font-size: 1em;
+    border: none;
+    display: block;
+
+}
